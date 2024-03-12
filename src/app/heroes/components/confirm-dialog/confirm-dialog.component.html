@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>¿Confirma la eliminación del héroe {{ data.superhero }}?</h2>
+<mat-dialog-content>
+  <p>Si elimina este héroe, no se podrá recuperar en el futuro</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <span class="flex-auto"></span>
+  <button color="primary" mat-button (click)="onConfirm()" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
